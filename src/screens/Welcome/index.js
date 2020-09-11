@@ -5,7 +5,7 @@ import "98.css";
 import "./Welcome.css"
 
 const BackgroundImage = styled.div`
-    background-image: url('https://upload.wikimedia.org/wikipedia/en/2/27/Bliss_%28Windows_XP%29.png');
+    background-image: url('https://external-preview.redd.it/uhq5zTcMPM3tOW_fbUz4PayDt_5pkEXdyXXoRWs3XOg.jpg?auto=webp&s=e06461124c1ccfdba7e9ece763b644ff68eeb06b');
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
@@ -16,14 +16,14 @@ const BackgroundImage = styled.div`
 
 const Baby = styled.img`
     position: fixed;
-    right: 0;
-    top: 0;
+    right: -68px;
+    top: -46px;
 `
 
 const Kozzi = styled.img`
     position: fixed;
-    right: 121px;
-    top: 68px;
+    right: 51px;
+    top: 26px;
 `
 
 const Welcome = (props) => {
@@ -32,8 +32,11 @@ const Welcome = (props) => {
 
     return (
         <div>
+            <BackgroundImage></BackgroundImage>
             <Baby src="/baby.png" height="300" />
-            <Kozzi src="/kozzi.png" />
+            <a href="https://instagram.com/cmkozzi" target="_blank">
+                <Kozzi src="/kozzi.png" />
+            </a>
             <div className="banner">
                 <div className="rainbow-text">
                     Welcome idiot

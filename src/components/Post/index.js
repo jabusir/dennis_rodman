@@ -1,6 +1,21 @@
 import React, { useState, useEffect } from "react";
-import "98.css";
 import Clip from "../Clip";
+import styled from 'styled-components';
+
+import "98.css";
+
+const Background = styled.div`
+    background-image: url('https://media.discordapp.net/attachments/600808673475952673/753003220447789166/image0.png?width=522&height=911');
+    background-repeat: repeat;
+    background-position: fixed;
+    z-index: -1;
+`
+const ClipsContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+`
+
 
 const Post = () => {
     const [clips, setClips] = useState([])
@@ -16,7 +31,13 @@ const Post = () => {
             .then((res) => setClips(res.clips))
     })
 
-    return (clips.map((clip) => <Clip clip={clip} />))
+    return (
+        <Background>
+            <ClipsContainer>
+                {clips.map((clip) => <Clip clip={clip} />)}\
+            </ClipsContainer>
+        </Background>
+    )
 };
 
 export default Post;

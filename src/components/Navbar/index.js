@@ -6,20 +6,30 @@ const NavbarContainer = styled.div`
     display: flex;
     flex-direction: column;
     position: fixed;
+    justify-content: space-evenly;
     z-index: 1;
+    height: 300px;
+    margin-left: 30px;
+    top: 30px;
 `
-const IconContainer = styled.div`
 
+const IconContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 
 const IconImg = styled.img`
+margin: 0 auto;
 
 `
 const IconTxt = styled.div`
-
+margin: 3px auto;
 `
 
 const StyledLink = styled(Link)`
+    display: flex;
+    flex-direction: column;
 
 `
 
@@ -36,24 +46,24 @@ const Navbar = () => {
             </IconContainer>
 
             <IconContainer>
-                <StyledLink>
+                <StyledLink to="/clips">
                     <IconImg src="/icons/folder.png" alt="folder" />
                     <IconTxt>Clips</IconTxt>
                 </StyledLink>
             </IconContainer>
 
             <IconContainer>
-                <a to="imranpotato.com" target="_blank">
+                <a href="https://imranpotato.com" target="_blank">
                     <IconImg src="/icons/potato.png" alt="potato" height="32px" width="32px" />
                     <IconTxt>Potato</IconTxt>
                 </a>
             </IconContainer>
 
             <IconContainer>
-                <StyledLink>
-                    <IconImg />
-                    <IconTxt></IconTxt>
-                </StyledLink>
+                <a href="https://twitch.tv/gabethedumbidiot" target="_blank">
+                    <IconImg src="/icons/trash.png" />
+                    <IconTxt>TRASH</IconTxt>
+                </a>
             </IconContainer>
 
         </NavbarContainer>
