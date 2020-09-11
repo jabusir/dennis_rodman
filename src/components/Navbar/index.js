@@ -8,7 +8,7 @@ const NavbarContainer = styled.div`
     position: fixed;
     justify-content: space-evenly;
     z-index: 1;
-    height: 300px;
+    height: 375px;
     margin-left: 30px;
     top: 30px;
 `
@@ -49,6 +49,13 @@ const Navbar = () => {
                 <StyledLink to="/clips">
                     <IconImg src="/icons/folder.png" alt="folder" />
                     <IconTxt>Clips</IconTxt>
+                </StyledLink>
+            </IconContainer>
+
+            <IconContainer>
+                <StyledLink to="/about">
+                    <IconImg src="https://static-cdn.jtvnw.net/emoticons/v1/303023404/2.0" alt="cheifkeef" />
+                    <IconTxt>About</IconTxt>
                 </StyledLink>
             </IconContainer>
 
