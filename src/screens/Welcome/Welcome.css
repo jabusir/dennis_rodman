@@ -105,5 +105,6 @@
 
     .ayo-window {
       bottom: 180px;
+      width: 200px !important;
     }
 } 
