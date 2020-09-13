@@ -16,6 +16,7 @@
 
 .ayo-content {
     margin: 0 auto;
+    max-width: 250px;
 }
 
 .banner {
@@ -36,7 +37,11 @@
    -webkit-animation: rainbow 5s infinite; 
    
    /* Internet Explorer */
-   -ms-animation: rainbow 5s infinite;
+   -ms-animation: rainbow 5s infinite;@media only screen and (max-width: 600px) {
+    .window {
+        max-width: 200px;
+    }
+} 
    
    /* Standar Syntax */
    animation: rainbow 5s infinite; 
@@ -88,3 +93,17 @@
     90%{color: DodgerBlue;}
       100%{color: orange;}
   }
+
+  @media only screen and (max-width: 600px) {
+    .rainbow-text {
+        display: none;
+    }
+
+    .ayo-content {
+      width: 100px;
+    }
+
+    .ayo-window {
+      bottom: 180px;
+    }
+} 

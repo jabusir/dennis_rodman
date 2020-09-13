@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import "98.css";
 
 const Background = styled.div`
-    background-image: url('https://media.discordapp.net/attachments/600808673475952673/753003220447789166/image0.png?width=522&height=911');
+    background-image: url('https://cdn.discordapp.com/attachments/600808673475952673/754211144696201297/image0.png');
     background-repeat: repeat;
     background-position: fixed;
     z-index: -1;

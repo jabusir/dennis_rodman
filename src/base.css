@@ -4,7 +4,8 @@ body {
 }
 
 .window {
-    max-width: 510px;
+    width: 500px;
+    max-width: 500px;
 }
 
 a {
@@ -12,3 +13,10 @@ a {
     color: black;
     font-family: sans-serif;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .window {
+        max-width: 300px;
+    }
+} 

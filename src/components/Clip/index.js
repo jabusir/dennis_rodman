@@ -18,9 +18,10 @@ const Clip = ({ clip }) => {
             <div className="window-body">
                 <ul className="tree-view">
                     <iframe
+                        className="window-content"
                         title={clip.slug}
                         src={`https://clips.twitch.tv/embed?clip=${clip.slug}&parent=localhost&autoplay=false&`}
-                        width="478"
+                        width="250px"
                         height="500px"
                         allowFullScreen={true}>
                     </iframe>
