@@ -28,6 +28,7 @@ const StyledImg = styled.img`
 
 const Icons = styled.div`
     display: flex;
+    justify-content: center;
 `
 
 const About = () => {
