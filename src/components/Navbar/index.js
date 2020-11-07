@@ -58,9 +58,9 @@ const Navbar = () => {
             </IconContainer>
 
             <IconContainer>
-                <StyledLink to="/clips">
+                <StyledLink to="/archive">
                     <IconImg src="/icons/folder.png" alt="folder" />
-                    <IconTxt>Clips</IconTxt>
+                    <IconTxt>Archive</IconTxt>
                 </StyledLink>
             </IconContainer>
 
