@@ -11,6 +11,18 @@ const NavbarContainer = styled.div`
     height: 375px;
     margin-left: 30px;
     top: 30px;
+    @media (max-width: 768px) {
+        margin-left: 10px;
+        flex-direction: row;
+        width: 100%;
+        background: silver;
+        height: auto;
+        margin: 0;
+        padding-top: 10px;
+        top: 0;
+        box-shadow:  inset -1px -1px #0a0a0a,inset 1px 1px #dfdfdf,inset -2px -2px grey,inset 2px 2px #fff;
+        align-items: center;
+      }
 `
 
 const IconContainer = styled.div`
@@ -46,9 +58,9 @@ const Navbar = () => {
             </IconContainer>
 
             <IconContainer>
-                <StyledLink to="/clips">
+                <StyledLink to="/archive">
                     <IconImg src="/icons/folder.png" alt="folder" />
-                    <IconTxt>Clips</IconTxt>
+                    <IconTxt>Archive</IconTxt>
                 </StyledLink>
             </IconContainer>
 

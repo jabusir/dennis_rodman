@@ -28,6 +28,7 @@ const StyledImg = styled.img`
 
 const Icons = styled.div`
     display: flex;
+    justify-content: center;
 `
 
 const About = () => {
@@ -54,7 +55,7 @@ const About = () => {
                                 <a href="https://twitter.com/gabedumbidiot">
                                     <StyledImg src="/icons/twitter.png" height="32px" width="32px" />
                                 </a>
-                                <a href="https://soundcloud.com">
+                                <a href="https://soundcloud.com/gabe-gonzalez-30/likes">
                                     <StyledImg src="/icons/cheifkeef.png" height="32px" width="32px" />
                                 </a>
                             </li>

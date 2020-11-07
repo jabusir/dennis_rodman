@@ -18,12 +18,20 @@ const Baby = styled.img`
     position: fixed;
     right: -68px;
     top: -46px;
+    @media (max-width: 768px) {
+        top: 20px;
+        right: -116px;
+    }
 `
 
 const Kozzi = styled.img`
     position: fixed;
     right: 51px;
     top: 26px;
+    @media (max-width: 768px) {
+        right: 4px;
+        top: 90px;
+    }
 `
 
 const Welcome = (props) => {
